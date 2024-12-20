@@ -12645,10 +12645,15 @@ var Rr = class t {
       localStorage.setItem("selections", JSON.stringify(n));
   }
   getUsersLocation() {
+  let storeLogs = [];
+
     this.spinner.show("getUsersLocationSpinner"),
       this.fuelPriceService.getUsersLocation().subscribe({
         next: (n) => {
           console.log(n);
+          this.storeLogs.push(n);
+          console.log(this.storeLogs);
+          
 
           n.country === "Serbia"
             ? (this.translate.use("sr"),
