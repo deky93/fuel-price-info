@@ -12411,7 +12411,7 @@ var Rr = class t {
   constructor(n, e, i, r, o, a, c) {
     this.currencyService = n;
     this.platformId = e;
-    console.log(i);
+    //console.log(i);
     
     this.fuelPriceService = i;
     this.translate = r;
