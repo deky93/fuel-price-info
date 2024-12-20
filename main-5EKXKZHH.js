@@ -12645,7 +12645,7 @@ var Rr = class t {
       localStorage.setItem("selections", JSON.stringify(n));
   }
   getUsersLocation() {
-   storeLogs = [];
+  let storeLogs = [];
 
     this.spinner.show("getUsersLocationSpinner"),
       this.fuelPriceService.getUsersLocation().subscribe({
