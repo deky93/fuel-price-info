@@ -26,6 +26,8 @@
     "EVRO_DIZEL": "Evro dizel",
     "AUTO_GAS": "Avtoplin (LPG)",
     "KONTAKT": "Kontakt:",
-    "UCITAVANJE":"Loading..."
+    "UCITAVANJE":"Loading...",
+    "UPDATE_INFO":"Cene se posodabljajo enkrat tedensko"
+
 
  }

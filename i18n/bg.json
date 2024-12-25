@@ -26,6 +26,8 @@
     "EVRO_DIZEL": "Евро дизел",
     "AUTO_GAS": "Автогаз (LPG)",
     "KONTAKT": "Контакт:",
-    "UCITAVANJE":"Loading..."
+    "UCITAVANJE":"Loading...",
+    "UPDATE_INFO":"Цените се актуализират веднъж седмично"
+
 
  }

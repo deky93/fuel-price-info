@@ -26,6 +26,7 @@
    "EVRO_DIZEL":"Evro dizel",
    "AUTO_GAS":"Autogas (TNG)",
    "KONTAKT":"Kontakt:",
-   "UCITAVANJE":"Sačekajte..."
+   "UCITAVANJE":"Sačekajte...",
+   "UPDATE_INFO":"Cene se ažuriraju jednom nedeljno"
 
 }

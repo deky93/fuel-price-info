@@ -26,6 +26,8 @@
     "EVRO_DIZEL": "Евра дизел",
     "AUTO_GAS": "Автогас (ТНГ)",
     "KONTAKT": "Контакт:",
-    "UCITAVANJE":"Loading..."
+    "UCITAVANJE":"Loading...",
+    "UPDATE_INFO":"Цените се ажурираат еднаш неделно"
+
 
  }

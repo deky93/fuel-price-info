@@ -26,6 +26,8 @@
     "EVRO_DIZEL": "Euro diesel",
     "AUTO_GAS": "Autogas (LPG)",
     "KONTAKT": "Επαφή:",
-    "UCITAVANJE":"Loading..."
+    "UCITAVANJE":"Loading...",
+    "UPDATE_INFO":"Οι τιμές ενημερώνονται μία φορά την εβδομάδα"
+
 
  }
