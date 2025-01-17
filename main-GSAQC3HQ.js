@@ -34376,6 +34376,8 @@ var Wc = class e {
         this.activeCurrency2
       ));
       console.log(this.convertedAmount);
+      console.log(this.excelAmounts);
+
       
   }
   getUserLocation() {
