@@ -34188,6 +34188,7 @@ var Wc = class e {
     });
   }
   setHreflang() {
+        
     //console.log(this.locale);
     let r = "https://gorivoinfo.com",
       t = [];
