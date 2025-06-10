@@ -12,8 +12,7 @@
   <meta charset="utf-8">
   <base href="https://gorivoinfo.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://gorivoinfo.com/">
-  <!-- <link rel="alternate" hreflang="x-default" href="https://gorivoinfo.com"> -->
+  <link rel="alternate" hreflang="x-default" href="https://gorivoinfo.com">
   <!-- <title>Cijene goriva u regionu - Gorivo info</title> 
   <meta name="title" content="Cijene goriva u regionu - Gorivo info">
   <meta name="description" content="Pogledajte trenutne cijene goriva: benzin, dizel, gas u Bosni,Hrvatskoj,Srbiji,Sloveniji,Crnoj Gori,Severnoj Makedoniji,Grckoj,Bugarskoj,Albaniji">
@@ -71,7 +70,7 @@ async function getUsersLocation() {
       
       // Set hreflang (you'll need to implement this function)
       setHreflang(locale);
-      
+      setCanonicalUrl(locale);
       // Set language (you'll need to implement your translation system)
       
       
@@ -101,6 +100,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Cijene goriva u regionu i Balkanu";
@@ -122,6 +122,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Cene goriva v regiji in na Balkanu";
@@ -143,6 +144,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Çmimet e karburanteve në rajon dhe në Ballkan";
@@ -164,6 +166,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Цените на горивата во регионот и на Балканот";
@@ -185,6 +188,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Цените на горивата в региона и на Балканите";
@@ -206,6 +210,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Τιμές καυσίμων στην περιοχή και στα Βαλκάνια";
@@ -228,6 +233,7 @@ async function getUsersLocation() {
       
       setHreflang(locale);
       
+      setCanonicalUrl(locale);
      
       
       document.title = "Fuel prices in the Balkans";
@@ -301,6 +307,53 @@ function setHreflang(locale) {
   document.documentElement.setAttribute('lang', locale);
 }
 
+// Helper function to set canonical URL based on locale
+function setCanonicalUrl(locale) {
+  const baseUrl = 'https://gorivoinfo.com'; // Change if needed
+  let canonicalUrl = baseUrl;
+
+  // Determine the correct URL path based on locale
+  if (locale === 'sr') {
+    canonicalUrl = `${baseUrl}/sr`;
+  } 
+  else if (locale === 'hr') {
+    canonicalUrl = `${baseUrl}/hr`;
+  }
+  else if (locale === 'sl') {
+    canonicalUrl = `${baseUrl}/sl`;
+  }
+  else if (locale === 'al') {
+    canonicalUrl = `${baseUrl}/al`;
+  }
+  else if (locale === 'mk') {
+    canonicalUrl = `${baseUrl}/mk`;
+  }
+  else if (locale === 'bg') {
+    canonicalUrl = `${baseUrl}/bg`;
+  }
+  else if (locale === 'gr') {
+    canonicalUrl = `${baseUrl}/gr`;
+  }
+  else {
+    canonicalUrl = `${baseUrl}/en`; // Default to English
+  }
+
+  // Remove existing canonical link if it exists
+  const existingCanonical = document.querySelector('link[rel="canonical"]');
+  if (existingCanonical) {
+    existingCanonical.remove();
+  }
+
+  // Create and add new canonical link
+  const canonicalLink = document.createElement('link');
+  canonicalLink.setAttribute('rel', 'canonical');
+  canonicalLink.setAttribute('href', canonicalUrl);
+  document.head.appendChild(canonicalLink);
+
+  // Set document language attribute (optional but recommended)
+  document.documentElement.setAttribute('lang', locale);
+}
+
 function setMetaTags(tags) {
   // Remove existing meta tags
   const existingMetaTags = document.querySelectorAll('meta[name], meta[property]');
@@ -335,5 +388,5 @@ getUsersLocation();
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THG94WCH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
   <app-root></app-root>
-<link rel="modulepreload" href="chunk-UGDIQDM3.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-DAKAPX5T.js" type="module"></script></body>
+<link rel="modulepreload" href="chunk-UGDIQDM3.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-AAO4RFXI.js" type="module"></script></body>
 </html>
